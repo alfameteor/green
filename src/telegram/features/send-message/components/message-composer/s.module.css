@@ -1,0 +1,85 @@
+.composerWrap {
+	flex-shrink: 0;
+	padding: 8px 28px 20px;
+}
+
+.composer {
+	display: flex;
+	align-items: flex-end;
+	gap: 9px;
+}
+
+.composer textarea {
+	flex: 1;
+	min-width: 0;
+	min-height: 52px;
+	max-height: 160px;
+	resize: none;
+	field-sizing: content;
+	padding: 15px 18px;
+	border: 0;
+	border-radius: 14px;
+	background: #fff;
+	box-shadow: 0 1px 2px #00000018;
+	color: #212121;
+	font-family: inherit;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.composer textarea::placeholder {
+	color: #8e9397;
+}
+
+.composer textarea:disabled {
+	cursor: default;
+	opacity: 0.85;
+}
+
+.composer textarea:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px #3390ec80;
+}
+
+.sendButton {
+	display: grid;
+	flex-shrink: 0;
+	place-items: center;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	background: #3390ec;
+	color: #fff;
+	box-shadow: 0 1px 2px #00000018;
+}
+
+.sendButton:hover:not(:disabled) {
+	background: #2784df;
+}
+
+.sendButton:disabled {
+	background: #fff;
+	color: #9aa5ae;
+	opacity: 0.85;
+}
+
+.composerWrap [role='alert'] {
+	margin: 0 0 12px;
+}
+
+@media (max-width: 700px) {
+	.composerWrap {
+		padding: 8px 12px 12px;
+	}
+
+	.composer textarea {
+		padding: 13px 14px;
+		min-height: 48px;
+		font-size: 16px;
+	}
+
+	.sendButton {
+		width: 48px;
+		height: 48px;
+	}
+}

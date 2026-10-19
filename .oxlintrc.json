@@ -1,0 +1,33 @@
+{
+  "plugins": [
+    "typescript",
+    "react",
+    "import"
+  ],
+  "rules": {
+    "curly": "error",
+    "func-style": [
+      "error",
+      "expression"
+    ],
+    "typescript/consistent-type-imports": "error",
+    "typescript/consistent-type-definitions": [
+      "error",
+      "type"
+    ],
+    "import/no-default-export": "error",
+    "no-unused-vars": "error"
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/app/page.tsx",
+        "src/app/layout.tsx"
+      ],
+      "rules": {
+        "import/no-default-export": "off",
+        "func-style": "off"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+.workspace {
+	display: flex;
+	height: 100dvh;
+	min-height: 540px;
+	min-width: 0;
+	overflow: hidden;
+	background: #fff;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #17191b;
+	container-type: inline-size;
+}
+@media (max-width: 850px) {
+	.workspace {
+		height: 72dvh;
+	}
+}

@@ -1,0 +1,81 @@
+.eyebrow {
+	font-size: 9px;
+	font-weight: 800;
+	letter-spacing: 1.7px;
+	color: #8b9bae;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.eyebrow > span {
+	width: 6px;
+	height: 6px;
+	background: #609984;
+	display: inline-block;
+	border-radius: 50%;
+}
+.cardIcon {
+	display: grid;
+	place-items: center;
+	background: #edf4ff;
+	color: var(--blue);
+	border-radius: 14px;
+	width: 49px;
+	height: 49px;
+	margin-bottom: 22px;
+}
+.muted {
+	color: #8592a3;
+	font-size: 11px;
+	line-height: 1.7;
+	margin-top: 8px;
+}
+.primary {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+	background: var(--blue);
+	color: #fff;
+	border-radius: 10px;
+	padding: 14px 20px;
+	font-size: 12px;
+	font-weight: 700;
+	transition: background 0.15s;
+}
+.primary:hover:not(:disabled) {
+	background: #2264d7;
+}
+.connectButton {
+	width: 100%;
+	margin-top: 25px;
+	justify-content: space-between;
+}
+.iconButton {
+	display: grid;
+	place-items: center;
+	background: transparent;
+	color: #8493a5;
+	padding: 8px;
+	border-radius: 8px;
+}
+.iconButton:hover {
+	background: #f1f5fa;
+}
+.avatar {
+	width: 44px;
+	height: 44px;
+	flex-shrink: 0;
+	display: grid;
+	place-items: center;
+	background: #dfeafc;
+	color: #5786cc;
+	border-radius: 16px;
+	font-size: 13px;
+	font-weight: 750;
+}
+.avatar.small {
+	width: 40px;
+	height: 40px;
+	border-radius: 14px;
+}

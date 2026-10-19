@@ -1,0 +1,56 @@
+.overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 5;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	place-items: center;
+	padding: 20px;
+	overflow-y: auto;
+	background: #1b2d4a40;
+}
+.content {
+	position: relative;
+	width: min(420px, 100%);
+	min-width: 0;
+	max-width: 100%;
+	max-height: calc(100dvh - 40px);
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	border-radius: 22px;
+	background: white;
+	padding: 32px;
+	box-shadow: 0 22px 80px #22345020;
+}
+.close {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+}
+.close[aria-disabled='true'] {
+	cursor: wait;
+}
+.title {
+	font-size: 23px;
+	font-weight: 800;
+	letter-spacing: -0.8px;
+	padding-right: 24px;
+}
+.description {
+	color: #5c6c80;
+	font-size: 13px;
+	line-height: 1.7;
+	margin-top: 8px;
+}
+@media (max-width: 700px) {
+	.overlay {
+		padding: 12px;
+	}
+	.content {
+		padding: 27px;
+		max-height: calc(100dvh - 24px);
+	}
+	.title {
+		font-size: 22px;
+	}
+}

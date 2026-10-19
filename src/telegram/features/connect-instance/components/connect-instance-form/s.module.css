@@ -1,0 +1,48 @@
+.connectCard {
+	background: #fff;
+	border: 1px solid #e9edf2;
+	border-radius: 24px;
+	padding: 34px;
+	box-shadow: 0 12px 50px #1d355005;
+	max-width: 440px;
+	width: 100%;
+	justify-self: end;
+}
+.connectCard h2 {
+	font-size: 23px;
+	font-weight: 800;
+	letter-spacing: -0.8px;
+}
+.setupNote {
+	display: flex;
+	gap: 10px;
+	margin-top: 24px;
+	padding-top: 20px;
+	border-top: 1px solid var(--line);
+	font-size: 10px;
+	line-height: 1.8;
+	color: #8a97a8;
+}
+.step {
+	display: grid;
+	place-items: center;
+	flex: 0 0 16px;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #b5c1d0;
+	border-radius: 50%;
+	font-size: 10px;
+	margin-top: 2px;
+}
+@media (max-width: 1000px) {
+	.connectCard {
+		padding: 27px;
+	}
+}
+@media (max-width: 700px) {
+	.connectCard {
+		max-width: none;
+		justify-self: stretch;
+		padding: 26px;
+	}
+}

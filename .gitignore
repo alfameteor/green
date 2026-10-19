@@ -1,0 +1,27 @@
+node_modules/
+dist/
+build/
+coverage/
+*.log
+*.tsbuildinfo
+.env*
+!.env.example
+.DS_Store
+test-results/
+output/
+
+.next/
+out/
+.idea/
+
+# Local AI instructions and tooling
+/.ai/
+/.agents/
+/.codex/
+/.claude/
+/.cursor/
+/AGENTS.md
+/AGENTS.override.md
+/CLAUDE.md
+/GEMINI.md
+/.aider*

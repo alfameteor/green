@@ -1,0 +1,36 @@
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+	margin-top: 22px;
+}
+.field label {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 750;
+}
+.field input {
+	font-size: 14px;
+}
+.field input::placeholder {
+	color: #64748b;
+}
+.field input[aria-invalid='true'] {
+	border-color: #b42318;
+}
+.hint {
+	color: #5c6c80;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.error {
+	color: #b42318;
+	font-size: 12px;
+	line-height: 1.5;
+	overflow-wrap: anywhere;
+}
+@media (max-width: 700px) {
+	.field input {
+		font-size: 16px;
+	}
+}
